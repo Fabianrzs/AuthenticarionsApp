@@ -1,6 +1,6 @@
 ﻿@using Microsoft.AspNetCore.Authorization
-@attribute [Authorize]
-@page "/weather"
+@attribute [Authorize(Roles = "Lector")]
+@page "/Lector"
 @attribute [StreamRendering]
 
 <PageTitle>Weather</PageTitle>

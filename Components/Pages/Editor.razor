@@ -1,7 +1,7 @@
 ﻿@using Microsoft.AspNetCore.Authorization
-@page "/counter"
+@page "/Editor"
 @rendermode InteractiveServer
-@attribute [Authorize]
+@attribute [Authorize(Roles = "Editor")]
 
 
 <PageTitle>Counter</PageTitle>
